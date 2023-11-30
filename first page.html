@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> labyrinth </title>
+	<link  rel="stylesheet"  href="style first page.css" >
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $("#aide").click(function(){
+                $("#aide").next(".aide").fadeIn();
+                $("#aide").fadeOut();
+                $("#jouer").click(function(){
+                    $("#aide").next(".aide").fadeOut();
+                    $("#aide").fadeIn();
+                });
+                $("#about").click(function(){
+                    $("#aide").next(".aide").fadeOut();
+                    $("#aide").fadeIn();
+                });
+            });
+            $("#sortir1").click(function(){
+                $("#aide").next(".aide").fadeOut();
+                $("#aide").fadeIn();
+            });
+            $("#jouer").click(function(){
+                $("#jouer").next(".jouer").fadeIn();
+                $("#jouer").fadeOut();
+                $("#about").click(function(){
+                    $("#jouer").next(".jouer").fadeOut();
+                    $("#jouer").fadeIn();
+                });
+                $("#aide").click(function(){
+                    $("#jouer").next(".jouer").fadeOut();
+                    $("#jouer").fadeIn();
+                });
+            });
+            $("#sortir2").click(function(){
+                $("#jouer").next(".jouer").fadeOut();
+                $("#jouer").fadeIn();
+            });
+            $("#about").click(function(){
+                $("#about").next(".about").fadeIn();
+                $("#about").fadeOut();
+                $("#aide").click(function(){
+                    $("#about").next(".about").fadeOut();
+                    $("#about").fadeIn();
+                });
+                $("#jouer").click(function(){
+                    $("#about").next(".about").fadeOut();
+                    $("#about").fadeIn();
+                });
+            });
+            $("#sortir3").click(function(){
+                $("#about").next(".about").fadeOut();
+                $("#about").fadeIn();
+            });
+        });
+    </script>
+</head>
+<body>
+        <div >
+            <h1><b>labyrinth</b>  </h1>
+            <br><br><br>
+            <div class="aide1">
+                <input type="button" id="aide" value="HELP" >
+                <div class="aide" >
+                    <span> HOW TO PLAY ? <input class="sortir" type="button" id="sortir1" value="X"></span>
+                    <h3> USE ARROW KEYS TO CONTROL THE CHARACTER AND FIND THE WAY OUT OF THE MAZE </h3><br>
+                    <img src="images/keyboard_arrows.png" class="img"><br><br>
+                </div>
+            </div>
+            <div class="jouer1">
+                <input type="button" id="jouer" value="CHOOSE LEVEL">
+                <div class="jouer" >
+                    <span> SELECT LEVEL OF DIFFICULTY <input class="sortir" type="button" id="sortir2" value="X"></span>
+                    <a href="niveau easy.html"><button    id="easy" class="level" > EASY </button> </a>
+                    <a href="niveau medium.html"><button  id="medium"  class="level" >MEDIUM</button> </a>
+                    <a href="niveau hard.html"><button  id="Hard"  class="level" >Hard</button> </a><br><br>
+                    
+                </div>
+            </div>
+            <div class="about1">
+                <input type="button" id="about" value="ABOUT"> 
+                <div class="about">
+                    <span>CREATED BY : <input class="sortir" type="button" id="sortir3" value="X"></span>
+                    <h3> THAALBI YASMINE </h3><br>
+                    <h3> BEN ABDALLAH EMNA </h3><br>
+                </div>
+            </div>
+        
+        </div>
+</body>
+</html>

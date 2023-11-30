@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Level 🌲</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style easy.css">
+
+</head>
+<body style=" background :linear-gradient(to right , #cef1e3 ,rgb(114, 236, 130));">
+    <h1 >Maze Game</h1>
+    <br>
+    <div>
+        <div class="board welcome">
+        <div>To play click on start</div>
+        <button style="border: 2px solid #296468;font-size: 18px;font-weight: bold; color:#296468;" onclick="startGame(game)">Play</button>
+    </div> 
+
+    <div class="board win-result cached">
+        <div> You win 🎉</div>
+        <div class="result-details" id="time">00:00</div>
+        <button style="border: 2px solid #296468;font-size: 18px;font-weight: bold; color:#296468;" onclick="replayGame(game)">Replay</button>
+    </div>
+
+    <div class="board lose-result cached">
+        <div>You Lose!!!</div>
+        <button style="border: 2px solid #296468;font-size: 18px;font-weight: bold; color:#296468;" onclick="replayGame(game)">Replay</button>
+    </div>
+
+    <div class="row cached">
+        <br>
+        <div class="column left" >
+          <div class="game-board" style="background-color: rgb(114, 236, 130);">
+        <div class="maze"></div>
+        </div>
+
+        <div class="column right" >
+            <a href="first page.html"><button ><b>Home Page</b></button></a><br><br>
+
+        <div class="border" >      
+            <h2>Time<img style="height: 32px;width: 32px;" src="images/clock.png"></h2>
+            <h1><div class="Timer">01:00</div></h1>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="Scripts/script easy.js"></script>
+    <script src="Scripts/audios.js"></script>
+
+</body>
+</html>

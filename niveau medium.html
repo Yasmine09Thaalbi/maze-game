@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium Level 🍋</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style medium.css">
+
+</head>
+<body style=" background :linear-gradient(to right ,#eaecc5 ,rgb(228, 225, 84));">
+    <h1 >Maze Game</h1>
+    <br>
+    <div>
+        <div class="board welcome " >
+        <div>To play click on start</div>
+        <button style="border: 2px solid #296468;font-size: 18px;font-weight: bold; color:#296468;" onclick="startGame(game)">Play</button>
+    </div>
+
+    <div class="board win-result cached">
+        <div>You win 🎉</div>
+        <div class="result-details" id="score"></div>
+        <div class="result-details" id="time"></div>
+        <button style="border: 2px solid #296468;font-size: 18px;font-weight: bold; color:#296468;" onclick="replayGame(game)">Replay</button>
+    </div>
+
+    <div class="board lose-result cached">
+        <div>You Lose!!!</div>
+        <button  style="border: 2px solid #296468;font-size: 18px;font-weight: bold; color:#296468;" onclick="replayGame(game)">Replay</button>
+    </div>
+
+    <div class="row cached">
+        <br>
+        <div class="column left" >
+            <div class="game-board" style="background-color:rgb(228, 225, 84);">
+                <div class="maze"></div>
+            </div>
+        </div>
+        <div class="column right" >
+            <button style="	background-color:rgb(228, 225, 84);" onclick="replayGame()"><b>Replay </b></button>
+            <a  href="first page.html"><button style="background-color:rgb(228, 225, 84);" ><b>Home Page</b></button></a><br><br>
+            <div class="border" >      
+                <h2>Time<img style="height: 32px;width: 32px;" src="images/clock.png"></h2>
+                <h1><div class="Timer">02:00</div></h1>
+            </div>
+            
+            <div style="font-size: 20px;padding: 10px;font-family: Arial, Helvetica, sans-serif;" class="affichage cached "></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="Scripts/script medium.js"></script>
+    <script src="Scripts/audios.js"></script>
+</body>
+</html>

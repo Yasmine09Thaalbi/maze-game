@@ -1,0 +1,127 @@
+body
+{
+    background-image:url('https://media.istockphoto.com/id/1255709860/vector/labyrinth-3d-vector-maze-game-classic-box-labyrinth-in-white-color-and-high-walls-gray-maze.jpg?s=612x612&w=0&k=20&c=vNKCwe1XTHZEiI-B53birs4ieGrllfv7buYD0pi3UqA=');
+    background-size: cover;
+}
+button
+{
+    width: 40%;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 150px;
+    background-color: gray;
+    margin-top: 15%;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    
+}
+input
+{
+    width: 60%;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 150px;
+    background-color: gray;
+    margin-top: 15%;
+    font-size: 30px;
+    
+    
+}
+
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h1
+{
+    font-size: 100px;
+    color: rgb(54, 51, 51);
+    text-align: center;
+}
+.aide{
+    justify-content: center;
+    width: 100%;
+    float: left;
+    border-collapse: collapse;
+    background-color: aliceblue;
+    border-radius: 20px;
+    text-align: center;
+    display: none;
+}
+.aide1{
+    justify-content: center;
+    width: 30%;
+    float: left;
+    border-collapse: collapse;
+    border-radius: 20px;
+    text-align: center;
+}
+.jouer{
+   width: 100%;
+   float: left;
+   border-collapse: collapse;
+   border-radius: 20px;
+   background-color: aliceblue;
+   text-align:center ;
+   display: none;
+}
+.jouer1{
+    width: 36%;
+    float: left;
+    border-collapse: collapse;
+    border-radius: 20px;
+    text-align:center ;
+    
+ }
+.about{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    background-color: aliceblue;
+    text-align: center;
+    display: none;
+}
+.about1{
+    width: 30%;
+    margin-left: 66%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    text-align: center;
+}
+.img
+{
+    width: 180px;
+    height: 80px;
+    margin-left: 5%;
+}
+.sortir
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: gray;
+    font-size: 15px;
+}
+span
+{
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    justify-content: center;
+ 
+}
+.level 
+{
+    
+    width: 90px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 5%;
+    background-color: gray;
+    margin-top: 15%;
+    font-size: 15px;
+}
